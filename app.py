@@ -13,6 +13,9 @@ def list_task():
             print(f"[ ] {tasks[i]['name']}")
 def complete_task(task_index):
     tasks[task_index]['completed']= True
+
+def delete_task(task_index):
+    tasks.pop(task_index)
     
 if __name__ == "__main__":
     print("Chào mừng đến với ứng dụng To-Do List!")
